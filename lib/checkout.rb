@@ -11,6 +11,11 @@ class Checkout
     @cart.push(item)
   end
 
+  def total(list)
+    list.split("").map { |i| i == i.downcase ? next : add_to_cart(i) }[0]
+    list.length > cart.length ? -1 : final_bill
+  end
+
   def final_bill
     a_count = 0
     b_count = 0
@@ -31,15 +36,5 @@ class Checkout
     end
     @receipt
   end
-
-  def total(list)
-    list.split("").map { |i| i == i.downcase ? next : add_to_cart(i) }[0]
-      if list.length > cart.length
-        -1
-      else
-        final_bill
-      end
-  end
-
 
 end
