@@ -1,8 +1,8 @@
 # process_workshop_checkout
 
-```
+This is my solution for the checkout process workshop at Makers Academy.
 
-This is my solution for the checkout process workshop at Makers Academy
+```
 
 The purpose of this challenge is to implement a supermarket checkout that calculates the total price of a number of items - to be run in a REPL like IRB. Don't worry about I/O.
 
